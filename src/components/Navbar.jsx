@@ -19,7 +19,7 @@ export default function Navbar() {
             aria-hidden="true"
             className="h-16 w-auto"
           />
-          <span className="text-sm font-medium text-[#1a1a1a]">Young Hong</span>
+          <span className="text-2xl md:text-sm font-medium text-[#1a1a1a]">Young Hong</span>
         </Link>
 
         {/* Padding ensures minimum 44×44px touch target (WCAG 2.5.5 / 2.5.8) */}
@@ -27,7 +27,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/#about"
-              className="text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               About
             </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/#experience"
-              className="text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               Experience
             </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/#skills"
-              className="text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               Expertise
             </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/work"
-              className="text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               Work
             </Link>

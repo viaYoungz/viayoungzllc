@@ -62,7 +62,7 @@ export default function Skills() {
     >
       <h2
         id="skills-heading"
-        className="text-xs uppercase tracking-widest text-[#595959] mb-12"
+        className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-12"
       >
         Core Competencies
       </h2>
@@ -74,7 +74,7 @@ export default function Skills() {
       <dl className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((skill) => (
           <div key={skill.title}>
-            <dt className="text-sm font-medium text-[#1a1a1a] mb-3">
+            <dt className="text-base md:text-sm font-medium text-[#1a1a1a] mb-3">
               {skill.title}
             </dt>
             <dd>
@@ -82,7 +82,7 @@ export default function Skills() {
                 {skill.tools.map((tool) => (
                   <li
                     key={tool}
-                    className="flex items-start gap-2 text-sm text-[#595959] font-light leading-relaxed"
+                    className="flex items-start gap-2 text-base md:text-sm text-[#595959] font-light leading-relaxed"
                   >
                     <span
                       aria-hidden="true"

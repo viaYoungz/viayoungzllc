@@ -57,7 +57,7 @@ export default function Experience() {
     >
       <h2
         id="experience-heading"
-        className="text-xs uppercase tracking-widest text-[#595959] mb-12"
+        className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-12"
       >
         Professional Experience
       </h2>
@@ -70,18 +70,18 @@ export default function Experience() {
             className="grid md:grid-cols-3 gap-4 md:gap-8 py-8 border-b border-[#e0ddd5] last:border-b-0"
           >
             <div>
-              <h3 className="text-sm font-medium text-[#1a1a1a]">{exp.company}</h3>
-              <p className="text-xs text-[#595959] mt-1">{exp.location}</p>
-              <p className="text-xs text-[#595959] mt-0.5">
+              <h3 className="text-base md:text-sm font-medium text-[#1a1a1a]">{exp.company}</h3>
+              <p className="text-sm md:text-xs text-[#595959] mt-1">{exp.location}</p>
+              <p className="text-sm md:text-xs text-[#595959] mt-0.5">
                 <time>{exp.period}</time>
               </p>
             </div>
             <div className="md:col-span-2">
-              <p className="text-sm font-medium text-[#4a4a4a] mb-3">{exp.role}</p>
+              <p className="text-base md:text-sm font-medium text-[#4a4a4a] mb-3">{exp.role}</p>
               <ul role="list" className="space-y-2">
                 {exp.bullets.map((bullet, i) => (
-                  <li key={i} className="flex gap-2 text-sm text-[#595959] font-light leading-relaxed">
-                    <span aria-hidden="true" className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-[#595959]" />
+                  <li key={i} className="flex gap-2 text-base md:text-sm text-[#595959] font-light leading-relaxed">
+                    <span aria-hidden="true" className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-[#595959]" />
                     <span>{bullet}</span>
                   </li>
                 ))}

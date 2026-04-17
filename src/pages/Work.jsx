@@ -96,11 +96,11 @@ export default function Work() {
 
         {/* Header */}
         <header className="py-12 border-b border-[#e0ddd5] mb-12">
-          <p className="text-xs uppercase tracking-widest text-[#595959] mb-4">Portfolio</p>
+          <p className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-4">Portfolio</p>
           <h1 className="text-4xl md:text-5xl font-light text-[#1a1a1a] leading-tight">
             Selected Work
           </h1>
-          <p className="mt-4 text-base text-[#595959] font-light max-w-xl leading-relaxed">
+          <p className="mt-4 text-lg md:text-base text-[#595959] font-light max-w-xl leading-relaxed">
             A cross-disciplinary collection spanning accessible web development,
             interactive media, 3D visualization, and brand design.
           </p>
@@ -116,17 +116,17 @@ export default function Work() {
               >
                 {/* Meta */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs uppercase tracking-widest text-[#595959]">
+                  <span className="text-sm md:text-xs uppercase tracking-widest text-[#595959]">
                     {project.category}
                   </span>
-                  <span className="text-xs text-[#595959]">{project.year}</span>
+                  <span className="text-sm md:text-xs text-[#595959]">{project.year}</span>
                 </div>
 
                 {/* Title & description */}
-                <h2 className="text-base font-medium text-[#1a1a1a] mb-2 group-hover:opacity-70 transition-opacity">
+                <h2 className="text-lg md:text-base font-medium text-[#1a1a1a] mb-2 group-hover:opacity-70 transition-opacity">
                   {project.title}
                 </h2>
-                <p className="text-sm text-[#595959] font-light leading-relaxed flex-1">
+                <p className="text-base md:text-sm text-[#595959] font-light leading-relaxed flex-1">
                   {project.description}
                 </p>
 
@@ -139,7 +139,7 @@ export default function Work() {
                   {project.tags.map((tag) => (
                     <li
                       key={tag}
-                      className="text-xs px-2.5 py-1 rounded-full border border-[#e0ddd5] text-[#595959]"
+                      className="text-sm md:text-xs px-2.5 py-1 rounded-full border border-[#e0ddd5] text-[#595959]"
                     >
                       {tag}
                     </li>

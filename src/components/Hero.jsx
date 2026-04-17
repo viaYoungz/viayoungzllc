@@ -15,7 +15,7 @@ export default function Hero() {
         Designing with empathy. Developing with precision.
       </h1>
 
-      <p className="text-lg md:text-xl text-[#4a4a4a] font-light leading-relaxed max-w-2xl mb-10">
+      <p className="text-xl md:text-xl text-[#4a4a4a] font-light leading-relaxed max-w-2xl mb-10">
         Hi, I am Young. I build creative, inclusive digital solutions that
         balance technical craft with accessible, user-focused storytelling.
       </p>
@@ -23,13 +23,13 @@ export default function Hero() {
       <div className="flex flex-col sm:flex-row gap-3">
         <Link
           to="/work"
-          className="inline-flex items-center justify-center px-6 py-3 bg-[#1a1a1a] text-white text-sm font-medium rounded-full hover:bg-[#333] transition-colors"
+          className="inline-flex items-center justify-center px-6 py-3 bg-[#1a1a1a] text-white text-base font-medium rounded-full hover:bg-[#333] transition-colors"
         >
           View my work
         </Link>
         <a
           href="mailto:viayoungz@gmail.com"
-          className="inline-flex items-center justify-center px-6 py-3 border border-[#1a1a1a] text-[#1a1a1a] text-sm font-medium rounded-full hover:bg-[#1a1a1a] hover:text-white transition-colors"
+          className="inline-flex items-center justify-center px-6 py-3 border border-[#1a1a1a] text-[#1a1a1a] text-base font-medium rounded-full hover:bg-[#1a1a1a] hover:text-white transition-colors"
         >
           Request work samples
         </a>
@@ -37,7 +37,7 @@ export default function Hero() {
           href="/resume.pdf"
           download="Young_Hong_Resume.pdf"
           aria-label="Download my resume as a PDF"
-          className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#1a1a1a] text-[#1a1a1a] text-sm font-medium rounded-full hover:bg-[#1a1a1a] hover:text-white transition-colors"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#1a1a1a] text-[#1a1a1a] text-base font-medium rounded-full hover:bg-[#1a1a1a] hover:text-white transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
