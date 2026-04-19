@@ -58,11 +58,11 @@ export default function Skills() {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="max-w-4xl mx-auto px-6 py-20 border-t border-[#e0ddd5] scroll-mt-20"
+      className="max-w-4xl mx-auto px-6 py-20 border-t border-[#E2DDD5] scroll-mt-20"
     >
       <h2
         id="skills-heading"
-        className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-12"
+        className="text-sm md:text-xs uppercase tracking-widest text-[#6B7280] mb-12"
       >
         Core Competencies
       </h2>
@@ -74,7 +74,7 @@ export default function Skills() {
       <dl className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((skill) => (
           <div key={skill.title}>
-            <dt className="text-base md:text-sm font-medium text-[#1a1a1a] mb-3">
+            <dt className="text-base md:text-sm font-medium text-[#1C1C1C] mb-3">
               {skill.title}
             </dt>
             <dd>
@@ -82,11 +82,11 @@ export default function Skills() {
                 {skill.tools.map((tool) => (
                   <li
                     key={tool}
-                    className="flex items-start gap-2 text-base md:text-sm text-[#595959] font-light leading-relaxed"
+                    className="flex items-start gap-2 text-base md:text-sm text-[#6B7280] font-light leading-relaxed"
                   >
                     <span
                       aria-hidden="true"
-                      className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-[#595959]"
+                      className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-[#6B7280]"
                     />
                     <span>{tool}</span>
                   </li>
