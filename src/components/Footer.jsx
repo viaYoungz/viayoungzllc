@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="max-w-4xl mx-auto px-6 py-16 border-t border-[#e0ddd5]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
         <div>
-          <h2 className="text-2xl md:text-3xl font-light text-[#1a1a1a] mb-2">
+          <h2 className="font-serif text-2xl md:text-3xl font-light text-[#1a1a1a] mb-2">
             Let's work together.
           </h2>
           <p className="text-base md:text-sm text-[#595959]">

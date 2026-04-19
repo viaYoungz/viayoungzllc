@@ -11,7 +11,7 @@ export default function Hero() {
       aria-label="Introduction"
       className="min-h-screen flex flex-col justify-center max-w-4xl mx-auto px-6 pt-24 pb-16 scroll-mt-20"
     >
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-[#1a1a1a] mb-6 max-w-3xl">
+      <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-[#1a1a1a] mb-6 max-w-3xl">
         Designing with empathy. Developing with precision.
       </h1>
 
