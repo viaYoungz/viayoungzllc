@@ -5,7 +5,7 @@ export default function Navbar() {
     /* aria-label distinguishes this from any other <nav> landmarks (WCAG 1.3.6) */
     <nav
       aria-label="Main navigation"
-      className="fixed top-0 left-0 right-0 z-50 bg-[#F9F8F6]/90 backdrop-blur-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#f5f4f0]/90 backdrop-blur-sm"
     >
       <div className="max-w-4xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
         <Link
@@ -19,7 +19,7 @@ export default function Navbar() {
             aria-hidden="true"
             className="h-16 w-auto"
           />
-          <span className="text-2xl md:text-sm font-medium text-[#1C1C1C]">Young Hong</span>
+          <span className="text-2xl md:text-sm font-medium text-[#1a1a1a]">Young Hong</span>
         </Link>
 
         {/* Padding ensures minimum 44×44px touch target (WCAG 2.5.5 / 2.5.8) */}
@@ -27,7 +27,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/#about"
-              className="text-base md:text-sm text-[#1C1C1C] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               About
             </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/#experience"
-              className="text-base md:text-sm text-[#1C1C1C] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               Experience
             </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/#skills"
-              className="text-base md:text-sm text-[#1C1C1C] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               Expertise
             </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/work"
-              className="text-base md:text-sm text-[#1C1C1C] hover:opacity-60 transition-opacity px-3 py-2 rounded"
+              className="text-base md:text-sm text-[#1a1a1a] hover:opacity-60 transition-opacity px-3 py-2 rounded"
             >
               Work
             </Link>

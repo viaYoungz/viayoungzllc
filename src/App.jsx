@@ -7,7 +7,7 @@ import Work from './pages/Work'
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-[#F9F8F6] min-h-screen">
+      <div className="bg-[#f5f4f0] min-h-screen">
         {/* Skip navigation — first focusable element on the page (WCAG 2.4.1) */}
         <a href="#main-content" className="skip-link">
           Skip to main content

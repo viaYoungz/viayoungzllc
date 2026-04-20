@@ -65,13 +65,13 @@ const projects = [
 
 export default function Work() {
   return (
-    <div className="bg-[#F9F8F6] min-h-screen">
+    <div className="bg-[#f5f4f0] min-h-screen">
       <main id="main-content" tabIndex="-1" className="focus-target max-w-4xl mx-auto px-6 pt-28 pb-24">
         {/* Back navigation */}
         <div className="mb-6 mt-6">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-sm text-[#6B7280] hover:text-[#1C1C1C] transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-[#595959] hover:text-[#1a1a1a] transition-colors"
             aria-label="Back to home"
           >
             <svg
@@ -95,12 +95,12 @@ export default function Work() {
         </div>
 
         {/* Header */}
-        <header className="py-12 border-b border-[#E2DDD5] mb-12">
-          <p className="text-sm md:text-xs uppercase tracking-widest text-[#6B7280] mb-4">Portfolio</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-light text-[#1C1C1C] leading-tight">
+        <header className="py-12 border-b border-[#e0ddd5] mb-12">
+          <p className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-4">Portfolio</p>
+          <h1 className="font-serif text-4xl md:text-5xl font-light text-[#1a1a1a] leading-tight">
             Selected Work
           </h1>
-          <p className="mt-4 text-lg md:text-base text-[#6B7280] font-light max-w-xl leading-relaxed">
+          <p className="mt-4 text-lg md:text-base text-[#595959] font-light max-w-xl leading-relaxed">
             A cross-disciplinary collection spanning accessible web development,
             interactive media, 3D visualization, and brand design.
           </p>
@@ -111,22 +111,22 @@ export default function Work() {
           {projects.map((project) => (
             <li key={project.id}>
               <article
-                className="group h-full flex flex-col border border-[#E2DDD5] rounded-xl p-6 hover:border-[#C5A880] transition-colors"
+                className="group h-full flex flex-col border border-[#e0ddd5] rounded-xl p-6 hover:border-[#1a1a1a] transition-colors"
                 aria-label={project.title}
               >
                 {/* Meta */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm md:text-xs uppercase tracking-widest text-[#6B7280]">
+                  <span className="text-sm md:text-xs uppercase tracking-widest text-[#595959]">
                     {project.category}
                   </span>
-                  <span className="text-sm md:text-xs text-[#6B7280]">{project.year}</span>
+                  <span className="text-sm md:text-xs text-[#595959]">{project.year}</span>
                 </div>
 
                 {/* Title & description */}
-                <h2 className="text-lg md:text-base font-medium text-[#1C1C1C] mb-2 group-hover:opacity-70 transition-opacity">
+                <h2 className="text-lg md:text-base font-medium text-[#1a1a1a] mb-2 group-hover:opacity-70 transition-opacity">
                   {project.title}
                 </h2>
-                <p className="text-base md:text-sm text-[#6B7280] font-light leading-relaxed flex-1">
+                <p className="text-base md:text-sm text-[#595959] font-light leading-relaxed flex-1">
                   {project.description}
                 </p>
 
@@ -139,7 +139,7 @@ export default function Work() {
                   {project.tags.map((tag) => (
                     <li
                       key={tag}
-                      className="text-sm md:text-xs px-2.5 py-1 rounded-full border border-[#E2DDD5] text-[#6B7280]"
+                      className="text-sm md:text-xs px-2.5 py-1 rounded-full border border-[#e0ddd5] text-[#595959]"
                     >
                       {tag}
                     </li>
@@ -151,11 +151,11 @@ export default function Work() {
         </ul>
 
         {/* CTA */}
-        <div className="mt-16 pt-12 border-t border-[#E2DDD5] text-center">
-          <p className="text-sm text-[#6B7280] mb-4">Want to see more or request case studies?</p>
+        <div className="mt-16 pt-12 border-t border-[#e0ddd5] text-center">
+          <p className="text-sm text-[#595959] mb-4">Want to see more or request case studies?</p>
           <a
             href="mailto:viayoungz@gmail.com"
-            className="inline-flex items-center justify-center px-6 py-3 bg-[#1C1C1C] text-white text-sm font-medium rounded-full hover:bg-[#2D2D2D] transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 bg-[#1a1a1a] text-white text-sm font-medium rounded-full hover:bg-[#333] transition-colors"
           >
             Get in touch
           </a>

@@ -16,8 +16,8 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #F9F8F6;
-  color: #1C1C1C;
+  background-color: #f5f4f0;
+  color: #1a1a1a;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -28,7 +28,7 @@ body {
   left: 1rem;
   z-index: 200;
   padding: 0.5rem 1.25rem;
-  background: #1C1C1C;
+  background: #1a1a1a;
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 500;
@@ -45,7 +45,7 @@ body {
 /* ── Global focus-visible ring ────────────────────────────────────── */
 /* Applies to all interactive elements; outline follows border-radius  */
 :focus-visible {
-  outline: 2px solid #1C1C1C;
+  outline: 2px solid #1a1a1a;
   outline-offset: 3px;
 }
 

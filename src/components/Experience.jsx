@@ -53,11 +53,11 @@ export default function Experience() {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="max-w-4xl mx-auto px-6 py-20 border-t border-[#E2DDD5] scroll-mt-20"
+      className="max-w-4xl mx-auto px-6 py-20 border-t border-[#e0ddd5] scroll-mt-20"
     >
       <h2
         id="experience-heading"
-        className="text-sm md:text-xs uppercase tracking-widest text-[#6B7280] mb-12"
+        className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-12"
       >
         Professional Experience
       </h2>
@@ -67,21 +67,21 @@ export default function Experience() {
           <article
             key={exp.company}
             aria-label={`${exp.company}, ${exp.period}`}
-            className="grid md:grid-cols-3 gap-4 md:gap-8 py-8 border-b border-[#E2DDD5] last:border-b-0"
+            className="grid md:grid-cols-3 gap-4 md:gap-8 py-8 border-b border-[#e0ddd5] last:border-b-0"
           >
             <div>
-              <h3 className="text-base md:text-sm font-medium text-[#1C1C1C]">{exp.company}</h3>
-              <p className="text-sm md:text-xs text-[#6B7280] mt-1">{exp.location}</p>
-              <p className="text-sm md:text-xs text-[#6B7280] mt-0.5">
+              <h3 className="text-base md:text-sm font-medium text-[#1a1a1a]">{exp.company}</h3>
+              <p className="text-sm md:text-xs text-[#595959] mt-1">{exp.location}</p>
+              <p className="text-sm md:text-xs text-[#595959] mt-0.5">
                 <time>{exp.period}</time>
               </p>
             </div>
             <div className="md:col-span-2">
-              <p className="text-base md:text-sm font-medium text-[#4A5568] mb-3">{exp.role}</p>
+              <p className="text-base md:text-sm font-medium text-[#4a4a4a] mb-3">{exp.role}</p>
               <ul role="list" className="space-y-2">
                 {exp.bullets.map((bullet, i) => (
-                  <li key={i} className="flex gap-2 text-base md:text-sm text-[#6B7280] font-light leading-relaxed">
-                    <span aria-hidden="true" className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-[#6B7280]" />
+                  <li key={i} className="flex gap-2 text-base md:text-sm text-[#595959] font-light leading-relaxed">
+                    <span aria-hidden="true" className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-[#595959]" />
                     <span>{bullet}</span>
                   </li>
                 ))}
