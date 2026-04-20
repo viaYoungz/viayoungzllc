@@ -28,32 +28,6 @@ export default function Footer() {
           <small>© {new Date().getFullYear()} Young Hong</small>
         </p>
 
-        <nav aria-label="Social media links">
-          <ul role="list" className="flex items-center gap-5">
-            <li>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm md:text-xs text-[#595959] hover:text-[#1a1a1a] transition-colors"
-              >
-                Instagram
-                <span className="sr-only"> (opens in new tab)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm md:text-xs text-[#595959] hover:text-[#1a1a1a] transition-colors"
-              >
-                LinkedIn
-                <span className="sr-only"> (opens in new tab)</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </footer>
   )
