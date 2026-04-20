@@ -2,22 +2,22 @@ import { Link } from 'react-router-dom'
 
 const projects = [
   {
-    id: 1,
-    title: 'Interactive e-Publication',
-    category: 'Interactive Media',
-    description:
-      'Designed and developed an interactive e-publication for legislative communications, incorporating maps, embedded video, and scrolling frames for an engaging reading experience.',
-    tags: ['InDesign', 'Interactive PDF', 'Section 508', 'WCAG 2.2'],
-    year: '2026',
-    sortYear: 2026,
-  },
-  {
     id: 2,
     title: 'Accessible Web UI — ViaYoungz',
     category: 'Web Development',
     description:
       'Built a responsive portfolio site from the ground up using React and Tailwind CSS, with full WCAG 2.2 and Section 508 compliance verified through JAWS/NVDA screen reader testing.',
     tags: ['React', 'Tailwind CSS', 'Accessibility', 'ARIA'],
+    year: '2026',
+    sortYear: 2026,
+  },
+  {
+    id: 1,
+    title: 'Interactive e-Publication',
+    category: 'Interactive Media',
+    description:
+      'Designed and developed an interactive e-publication for legislative communications, incorporating maps, embedded video, and scrolling frames for an engaging reading experience.',
+    tags: ['InDesign', 'Interactive PDF', 'Section 508', 'WCAG 2.2'],
     year: '2026',
     sortYear: 2026,
   },
