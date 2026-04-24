@@ -34,9 +34,10 @@ export default function Hero() {
           Request work samples
         </a>
         <a
-          href="/resume.pdf"
-          download="Young_Hong_Resume.pdf"
-          aria-label="Download my resume as a PDF"
+          href="https://docs.google.com/document/d/1_HSU7EqzZXTjqLQrDzcHc8iuJXLON4wrXw0--ZhTAHY/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View my resume on Google Docs"
           className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-[#1a1a1a] text-[#1a1a1a] text-base font-medium rounded-full hover:bg-[#1a1a1a] hover:text-white transition-colors"
         >
           <svg
