@@ -186,6 +186,9 @@ export default function ThreeDVisualization() {
 
         {/* Header */}
         <header className="py-12 border-b border-[#e0ddd5] mb-12">
+          <p className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-4">
+            3D & Visualization
+          </p>
           <h1 className="font-serif text-4xl md:text-5xl font-light text-[#1a1a1a] leading-tight">
             3D & Visualization
           </h1>

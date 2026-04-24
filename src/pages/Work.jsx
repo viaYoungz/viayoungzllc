@@ -101,7 +101,7 @@ export default function Work() {
         <header className="py-12 border-b border-[#e0ddd5] mb-12">
           <p className="text-sm md:text-xs uppercase tracking-widest text-[#595959] mb-4">Portfolio</p>
           <h1 className="font-serif text-4xl md:text-5xl font-light text-[#1a1a1a] leading-tight">
-            Selected Work
+            My Work
           </h1>
           <p className="mt-4 text-lg md:text-base text-[#595959] font-light max-w-xl leading-relaxed">
             A cross-disciplinary collection spanning accessible web development,
