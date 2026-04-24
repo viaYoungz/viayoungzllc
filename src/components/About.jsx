@@ -1,9 +1,8 @@
 const interests = [
   { emoji: '🎨', ariaLabel: 'Art', label: 'Art' },
-  { emoji: '🌱', ariaLabel: 'Nature', label: 'Nature' },
   { emoji: '🧁', ariaLabel: 'Cupcake', label: 'Sweats' },
   { emoji: '🐶', ariaLabel: 'Dog Face', label: 'My pets, Teddy and Max' },
-  { emoji: '👟', ariaLabel: 'Running Shoes', label: 'Walking or running' },
+  { emoji: '👟', ariaLabel: 'Running Shoes', label: 'Walking and running in outdoor' },
 ]
 
 export default function About() {

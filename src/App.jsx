@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import ScrollToHash from './components/ScrollToHash'
 import Home from './pages/Home'
 import Work from './pages/Work'
+import ThreeDVisualization from './pages/3DVisualization'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/3d-product-gallery" element={<ThreeDVisualization />} />
         </Routes>
       </div>
     </BrowserRouter>

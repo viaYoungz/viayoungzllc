@@ -27,9 +27,10 @@ const projects = [
     category: 'Web Engineering',
     description:
       "Modernized legacy CMS components for Radio Free Asia's international news platforms, improving accessibility, performance, and cross-browser compatibility across multiple language editions.",
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'Accessibility'],
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Accessibility', 'React', 'Arc XP'],
     year: '2016–2025',
     sortYear: 2025,
+    link: 'https://www.rfa.org',
   },
   {
     id: 4,
@@ -40,6 +41,8 @@ const projects = [
     tags: ['Blender', 'Virtual Proofs', 'Isometric Design', '3D Rendering'],
     year: '2010–2022',
     sortYear: 2022,
+    link: '/3d-product-gallery',
+    internal: true,
   },
   {
     id: 5,
@@ -114,37 +117,121 @@ export default function Work() {
                 className="group h-full flex flex-col border border-[#e0ddd5] rounded-xl p-6 hover:border-[#1a1a1a] transition-colors"
                 aria-label={project.title}
               >
-                {/* Meta */}
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm md:text-xs uppercase tracking-widest text-[#595959]">
-                    {project.category}
-                  </span>
-                  <span className="text-sm md:text-xs text-[#595959]">{project.year}</span>
-                </div>
+                {project.link ? (
+                  project.internal ? (
+                  <Link
+                    to={project.link}
+                    className="flex flex-col flex-1"
+                    aria-label={project.title}
+                  >
+                    {/* Meta */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-sm md:text-xs uppercase tracking-widest text-[#595959]">
+                        {project.category}
+                      </span>
+                      <span className="text-sm md:text-xs text-[#595959]">{project.year}</span>
+                    </div>
 
-                {/* Title & description */}
-                <h2 className="text-lg md:text-base font-medium text-[#1a1a1a] mb-2 group-hover:opacity-70 transition-opacity">
-                  {project.title}
-                </h2>
-                <p className="text-base md:text-sm text-[#595959] font-light leading-relaxed flex-1">
-                  {project.description}
-                </p>
+                    {/* Title & description */}
+                    <h2 className="text-lg md:text-base font-medium text-[#1a1a1a] mb-2 group-hover:opacity-70 transition-opacity">
+                      {project.title}
+                    </h2>
+                    <p className="text-base md:text-sm text-[#595959] font-light leading-relaxed flex-1">
+                      {project.description}
+                    </p>
 
-                {/* Tags */}
-                <ul
-                  role="list"
-                  aria-label="Technologies used"
-                  className="flex flex-wrap gap-2 mt-5"
-                >
-                  {project.tags.map((tag) => (
-                    <li
-                      key={tag}
-                      className="text-sm md:text-xs px-2.5 py-1 rounded-full border border-[#e0ddd5] text-[#595959]"
+                    {/* Tags */}
+                    <ul
+                      role="list"
+                      aria-label="Technologies used"
+                      className="flex flex-wrap gap-2 mt-5"
                     >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
+                      {project.tags.map((tag) => (
+                        <li
+                          key={tag}
+                          className="text-sm md:text-xs px-2.5 py-1 rounded-full border border-[#e0ddd5] text-[#595959]"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  </Link>
+                  ) : (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col flex-1"
+                    aria-label={`${project.title} (opens in new tab)`}
+                  >
+                    {/* Meta */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-sm md:text-xs uppercase tracking-widest text-[#595959]">
+                        {project.category}
+                      </span>
+                      <span className="text-sm md:text-xs text-[#595959]">{project.year}</span>
+                    </div>
+
+                    {/* Title & description */}
+                    <h2 className="text-lg md:text-base font-medium text-[#1a1a1a] mb-2 group-hover:opacity-70 transition-opacity">
+                      {project.title}
+                    </h2>
+                    <p className="text-base md:text-sm text-[#595959] font-light leading-relaxed flex-1">
+                      {project.description}
+                    </p>
+
+                    {/* Tags */}
+                    <ul
+                      role="list"
+                      aria-label="Technologies used"
+                      className="flex flex-wrap gap-2 mt-5"
+                    >
+                      {project.tags.map((tag) => (
+                        <li
+                          key={tag}
+                          className="text-sm md:text-xs px-2.5 py-1 rounded-full border border-[#e0ddd5] text-[#595959]"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  </a>
+                  )
+                ) : (
+                  <>
+                    {/* Meta */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-sm md:text-xs uppercase tracking-widest text-[#595959]">
+                        {project.category}
+                      </span>
+                      <span className="text-sm md:text-xs text-[#595959]">{project.year}</span>
+                    </div>
+
+                    {/* Title & description */}
+                    <h2 className="text-lg md:text-base font-medium text-[#1a1a1a] mb-2 group-hover:opacity-70 transition-opacity">
+                      {project.title}
+                    </h2>
+                    <p className="text-base md:text-sm text-[#595959] font-light leading-relaxed flex-1">
+                      {project.description}
+                    </p>
+
+                    {/* Tags */}
+                    <ul
+                      role="list"
+                      aria-label="Technologies used"
+                      className="flex flex-wrap gap-2 mt-5"
+                    >
+                      {project.tags.map((tag) => (
+                        <li
+                          key={tag}
+                          className="text-sm md:text-xs px-2.5 py-1 rounded-full border border-[#e0ddd5] text-[#595959]"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
               </article>
             </li>
           ))}
