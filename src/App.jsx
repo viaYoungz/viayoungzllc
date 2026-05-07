@@ -4,6 +4,7 @@ import ScrollToHash from './components/ScrollToHash'
 import Home from './pages/Home'
 import Work from './pages/Work'
 import ThreeDVisualization from './pages/3DVisualization'
+import InteractiveMedia from './pages/InteractiveMedia'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/3d-product-gallery" element={<ThreeDVisualization />} />
+          <Route path="/interactive-media-gallery" element={<InteractiveMedia />} />
         </Routes>
       </div>
     </BrowserRouter>

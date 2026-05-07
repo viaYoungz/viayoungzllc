@@ -20,6 +20,8 @@ const projects = [
     tags: ['InDesign', 'Interactive PDF', 'Section 508', 'WCAG 2.2'],
     year: '2026',
     sortYear: 2026,
+    link: '/interactive-media-gallery',
+    internal: true,
   },
   {
     id: 3,
