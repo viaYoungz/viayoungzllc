@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" font-family="'IBM Plex Sans', system-ui, sans-serif">
+  <defs>
+    <style>
+      .title    { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.22em; fill: #1A3A6E; text-transform: uppercase; }
+      .sub      { font-family: 'Fraunces', 'Times New Roman', serif; font-style: italic; font-size: 12px; fill: #5B6B82; }
+      .axis-num { font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10px; fill: #94A3B8; }
+      .bar-lbl  { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 11px; font-weight: 600; fill: #1A3A6E; }
+      .bar-val  { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; fill: #1A3A6E; }
+      .delta    { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; fill: #1F7A4A; }
+      .delta-sub{ font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; fill: #5B6B82; }
+      .src      { font-family: 'Fraunces', 'Times New Roman', serif; font-style: italic; font-size: 10px; fill: #5B6B82; }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#1F7A4A"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="22" class="title">MEMORY SEMICONDUCTORS · CAPACITY TIGHTENING</text>
+  <line x1="20" y1="30" x2="580" y2="30" stroke="#DDE3EC" stroke-width="1"/>
+  <text x="20" y="48" class="sub">Micron Technology (MU) approximate market capitalization.</text>
+  <text x="20" y="64" class="sub">Memory-related equities advanced sharply during the week amid AI-allocation commentary.</text>
+
+  <!-- Chart area: y 90..270 (180 tall). Value range $400B..$800B; each $100B = 45px.
+       y = 90 + (800 - v) * 0.45 -->
+
+  <!-- Horizontal gridlines -->
+  <g stroke="#E5E9F0" stroke-width="0.6" fill="none">
+    <line x1="90" y1="90"  x2="560" y2="90"/>
+    <line x1="90" y1="135" x2="560" y2="135"/>
+    <line x1="90" y1="180" x2="560" y2="180"/>
+    <line x1="90" y1="225" x2="560" y2="225"/>
+    <line x1="90" y1="270" x2="560" y2="270"/>
+  </g>
+
+  <!-- Y-axis labels -->
+  <g class="axis-num" text-anchor="end">
+    <text x="84" y="93">$800B</text>
+    <text x="84" y="138">$700B</text>
+    <text x="84" y="183">$600B</text>
+    <text x="84" y="228">$500B</text>
+    <text x="84" y="273">$400B</text>
+  </g>
+
+  <!-- X-axis baseline -->
+  <line x1="90" y1="270" x2="560" y2="270" stroke="#94A3B8" stroke-width="0.8"/>
+
+  <!-- Bars: each 90px wide, centered at x=210 and x=410 -->
+  <!-- Pre-rally ~$620B  ->  y = 90 + (800-620)*0.45 = 171,  height = 270 - 171 = 99 -->
+  <rect x="165" y="171" width="90" height="99" fill="#7286A8"/>
+  <text x="210" y="161" class="bar-val" text-anchor="middle">~$620B</text>
+
+  <!-- May 5 close ~$704B -> y = 90 + (800-704)*0.45 = 133.2, height = 270 - 133 = 137 -->
+  <rect x="365" y="133" width="90" height="137" fill="#1A3A6E"/>
+  <text x="410" y="123" class="bar-val" text-anchor="middle">~$704B</text>
+
+  <!-- Bar category labels -->
+  <g class="bar-lbl" text-anchor="middle">
+    <text x="210" y="290">Pre-rally (Apr 30)</text>
+    <text x="410" y="290">May 5 close</text>
+  </g>
+
+  <!-- Delta callout: arrow from top of left bar to top of right bar with +~13.5% label -->
+  <line x1="265" y1="155" x2="355" y2="143" stroke="#1F7A4A" stroke-width="1.4" marker-end="url(#arrowhead)"/>
+  <text x="310" y="138" class="delta" text-anchor="middle">+~13.5%</text>
+  <text x="310" y="172" class="delta-sub" text-anchor="middle">single session</text>
+
+  <!-- Source -->
+  <text x="580" y="320" class="src" text-anchor="end">Source: Company market data. Micron crossed $700B market cap on May 5, 2026 (CNBC).</text>
+</svg>

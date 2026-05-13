@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" font-family="'IBM Plex Sans', system-ui, sans-serif">
+  <defs>
+    <style>
+      .title    { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.22em; fill: #1A3A6E; text-transform: uppercase; }
+      .sub      { font-family: 'Fraunces', 'Times New Roman', serif; font-style: italic; font-size: 13px; fill: #5B6B82; }
+      .axis-num { font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10px; fill: #94A3B8; }
+      .axis-lbl { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 11px; fill: #5B6B82; }
+      .legend   { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 11px; fill: #5B6B82; }
+      .src      { font-family: 'Fraunces', 'Times New Roman', serif; font-style: italic; font-size: 10px; fill: #5B6B82; }
+    </style>
+  </defs>
+
+  <!-- Title block -->
+  <text x="20" y="22" class="title">DAILY INDEX PATH · INDEXED TO 100</text>
+  <line x1="20" y1="30" x2="740" y2="30" stroke="#DDE3EC" stroke-width="1"/>
+  <text x="20" y="48" class="sub">Friday May 1, 2026 = 100. Daily closing values normalized.</text>
+
+  <!-- Chart area: 6 points across, value range 97.5–105 (7.5 units), scale 24px/unit
+       y = 70 + (105 - v) * 24       => 100 maps to y = 190
+       x: Fri 5/1=80, Mon 5/4=204, Tue 5/5=328, Wed 5/6=452, Thu 5/7=576, Fri 5/8=700 -->
+
+  <!-- Horizontal gridlines -->
+  <g stroke="#E5E9F0" stroke-width="0.6" fill="none">
+    <line x1="80" y1="70"  x2="720" y2="70"/>
+    <line x1="80" y1="106" x2="720" y2="106"/>
+    <line x1="80" y1="142" x2="720" y2="142"/>
+    <line x1="80" y1="178" x2="720" y2="178"/>
+    <line x1="80" y1="214" x2="720" y2="214"/>
+    <line x1="80" y1="250" x2="720" y2="250"/>
+  </g>
+
+  <!-- Y-axis labels (105.00, 103.50, 102.00, 100.50, 99.00, 97.50) -->
+  <g class="axis-num" text-anchor="end">
+    <text x="74" y="73">105.00</text>
+    <text x="74" y="109">103.50</text>
+    <text x="74" y="145">102.00</text>
+    <text x="74" y="181">100.50</text>
+    <text x="74" y="217">99.00</text>
+    <text x="74" y="253">97.50</text>
+  </g>
+
+  <!-- 100 baseline emphasized -->
+  <line x1="80" y1="190" x2="720" y2="190" stroke="#C8D5EC" stroke-width="1" stroke-dasharray="2,3"/>
+
+  <!-- X-axis baseline -->
+  <line x1="80" y1="250" x2="720" y2="250" stroke="#94A3B8" stroke-width="0.8"/>
+
+  <!-- X-axis labels (6 days) -->
+  <g class="axis-lbl" text-anchor="middle">
+    <text x="80"  y="270">Fri 5/1</text>
+    <text x="208" y="270">Mon 5/4</text>
+    <text x="336" y="270">Tue 5/5</text>
+    <text x="464" y="270">Wed 5/6</text>
+    <text x="592" y="270">Thu 5/7</text>
+    <text x="720" y="270">Fri 5/8</text>
+  </g>
+
+  <!--
+    Normalized values (prior Fri 5/1 close = 100):
+       Day        S&P     Dow      Nasdaq
+       Fri 5/1   100.00  100.00   100.00
+       Mon 5/4    99.59   98.87    99.81
+       Tue 5/5   100.40   99.59   100.84
+       Wed 5/6   101.87  100.83   102.88
+       Thu 5/7   101.48  100.20   102.75
+       Fri 5/8   102.33  100.22   104.51
+
+    y = 70 + (105 - v) * 24
+  -->
+
+  <!-- S&P 500 line (navy, dashed) -->
+  <polyline fill="none" stroke="#1A3A6E" stroke-width="2.2" stroke-dasharray="6,3"
+    points="80,190 208,199.84 336,180.40 464,145.12 592,154.48 720,134.08"/>
+  <g fill="#1A3A6E">
+    <circle cx="80"  cy="190"    r="3.2"/>
+    <circle cx="208" cy="199.84" r="3.2"/>
+    <circle cx="336" cy="180.40" r="3.2"/>
+    <circle cx="464" cy="145.12" r="3.2"/>
+    <circle cx="592" cy="154.48" r="3.2"/>
+    <circle cx="720" cy="134.08" r="3.2"/>
+  </g>
+
+  <!-- Dow line (gray-blue, dotted) -->
+  <polyline fill="none" stroke="#7286A8" stroke-width="2.2" stroke-dasharray="2,3"
+    points="80,190 208,217.12 336,199.84 464,170.08 592,185.20 720,184.72"/>
+  <g fill="#7286A8">
+    <circle cx="80"  cy="190"    r="3.2"/>
+    <circle cx="208" cy="217.12" r="3.2"/>
+    <circle cx="336" cy="199.84" r="3.2"/>
+    <circle cx="464" cy="170.08" r="3.2"/>
+    <circle cx="592" cy="185.20" r="3.2"/>
+    <circle cx="720" cy="184.72" r="3.2"/>
+  </g>
+
+  <!-- Nasdaq line (green, solid) -->
+  <polyline fill="none" stroke="#1F7A4A" stroke-width="2.6"
+    points="80,190 208,194.56 336,169.84 464,120.88 592,124.00 720,81.76"/>
+  <g fill="#1F7A4A">
+    <circle cx="80"  cy="190"    r="3.2"/>
+    <circle cx="208" cy="194.56" r="3.2"/>
+    <circle cx="336" cy="169.84" r="3.2"/>
+    <circle cx="464" cy="120.88" r="3.2"/>
+    <circle cx="592" cy="124.00" r="3.2"/>
+    <circle cx="720" cy="81.76"  r="3.2"/>
+  </g>
+
+  <!-- End-of-week value labels at right edge -->
+  <g font-family="'IBM Plex Mono', Menlo, monospace" font-size="10" font-weight="600">
+    <text x="724" y="84"  fill="#1F7A4A">104.51</text>
+    <text x="724" y="137" fill="#1A3A6E">102.33</text>
+    <text x="724" y="188" fill="#7286A8">100.22</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(220,295)" class="legend">
+    <g stroke="#1A3A6E" stroke-width="2.4" stroke-dasharray="6,3">
+      <line x1="0" y1="0" x2="22" y2="0"/>
+    </g>
+    <text x="28" y="3.5">S&amp;P 500</text>
+
+    <g transform="translate(100,0)" stroke="#7286A8" stroke-width="2.4" stroke-dasharray="2,3">
+      <line x1="0" y1="0" x2="22" y2="0"/>
+    </g>
+    <text x="128" y="3.5">Dow</text>
+
+    <g transform="translate(180,0)" stroke="#1F7A4A" stroke-width="2.6">
+      <line x1="0" y1="0" x2="22" y2="0"/>
+    </g>
+    <text x="208" y="3.5">Nasdaq Composite</text>
+  </g>
+
+  <!-- Source -->
+  <text x="740" y="325" class="src" text-anchor="end">Source: Bloomberg. Friday close to Friday close.</text>
+</svg>
